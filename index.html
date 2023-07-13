@@ -1,23 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+						initial-scale=1.0"
+    />
+    <title>Setup Tailwind-CSS with Vite</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		content="width=device-width,
-						initial-scale=1.0">
-	<title>Setup Tailwind-CSS with Vite</title>
-	<link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <!-- header section  -->
+    <header>
+      <!-- search bar section -->
+      <div class="px-6 py-2">
+        <div
+          class="flex gap-2 px-3 rounded-full border border-gray-600 items-center w-full"
+        >
+          <!-- search icon -->
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-[16px] h-[16px]"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </div>
+          <div class="flex items-center justify-between w-full">
+            <!-- texts -->
+            <div>
+              <h5 class="text-[14px]">Anywhere</h5>
+              <div class="text-[12px] flex gap-2">
+                <h3>Any week</h3>
+                <h3>Add guests</h3>
+              </div>
+            </div>
+            <!-- filter -->
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-[16px] h-[16px]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- stylish icons -->
+      <div class="flex justify-evenly">
+        <div>
+          <div class="w-[24px] h-[24px]">
+            <img
+              src="https://a0.muscache.com/pictures/8b44f770-7156-4c7b-b4d3-d92549c8652f.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h3 class="text-[12px]">Artic</h3>
+          </div>
+        </div>
+        <div>
+          <div class="w-[24px] h-[24px]">
+            <img
+              src="https://a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h3 class="text-[12px]">Artic</h3>
+          </div>
+        </div>
+        <div>
+          <div class="w-[24px] h-[24px]">
+            <img
+              src="https://a0.muscache.com/pictures/7ff6e4a1-51b4-4671-bc9a-6f523f196c61.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h3 class="text-[12px]">Artic</h3>
+          </div>
+        </div>
+        <div>
+          <div class="w-[24px] h-[24px]">
+            <img
+              src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h3 class="text-[12px]">Artic</h3>
+          </div>
+        </div>
+        <div>
+          <div class="w-[24px] h-[24px]">
+            <img
+              src="https://a0.muscache.com/pictures/5ed8f7c7-2e1f-43a8-9a39-4edfc81a3325.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h3 class="text-[12px]">Artic</h3>
+          </div>
+        </div>
+        <div>
+          <div class="w-[24px] h-[24px]">
+            <img
+              src="https://a0.muscache.com/pictures/7ff6e4a1-51b4-4671-bc9a-6f523f196c61.jpg"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h3 class="text-[12px]">Artic</h3>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main section -->
+    <main class="px-5 py-3">
+      <div class="grid grid-cols-2 gap-3">
+        <div>
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-52086975/original/017465f1-e5b3-43ff-8d92-facd828f8fc2.jpeg?im_w=720"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h2 class="text-[14px]">Kittia, Finland</h2>
+          </div>
+          <div class="text-[12px] text-gray-500">7,000 kilometers away</div>
+          <div class="text-[14px]">$124 night</div>
+        </div>
+        <div>
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-52086975/original/017465f1-e5b3-43ff-8d92-facd828f8fc2.jpeg?im_w=720"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h2 class="text-[14px]">Kittia, Finland</h2>
+          </div>
+          <div class="text-[12px] text-gray-500">7,000 kilometers away</div>
+          <div class="text-[14px]">$124 night</div>
+        </div>
 
-<body>
-	<div class="flex justify-center
-				items-center min-h-screen ">
-		<div class="bg-green-700 p-8 text-3xl
-					rounded-2xl shadow-2xl">
-					GeeksforGeeks Learning!
-		</div>
-	</div>
-</body>
+        <div>
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-52086975/original/017465f1-e5b3-43ff-8d92-facd828f8fc2.jpeg?im_w=720"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h2 class="text-[14px]">Kittia, Finland</h2>
+          </div>
+          <div class="text-[12px] text-gray-500">7,000 kilometers away</div>
+          <div class="text-[14px]">$124 night</div>
+        </div>
+        <div>
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-52086975/original/017465f1-e5b3-43ff-8d92-facd828f8fc2.jpeg?im_w=720"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h2 class="text-[14px]">Kittia, Finland</h2>
+          </div>
+          <div class="text-[12px] text-gray-500">7,000 kilometers away</div>
+          <div class="text-[14px]">$124 night</div>
+        </div>
 
+        <div>
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-52086975/original/017465f1-e5b3-43ff-8d92-facd828f8fc2.jpeg?im_w=720"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h2 class="text-[14px]">Kittia, Finland</h2>
+          </div>
+          <div class="text-[12px] text-gray-500">7,000 kilometers away</div>
+          <div class="text-[14px]">$124 night</div>
+        </div>
+        <div>
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-52086975/original/017465f1-e5b3-43ff-8d92-facd828f8fc2.jpeg?im_w=720"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h2 class="text-[14px]">Kittia, Finland</h2>
+          </div>
+          <div class="text-[12px] text-gray-500">7,000 kilometers away</div>
+          <div class="text-[14px]">$124 night</div>
+        </div>
+
+        <div>
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-52086975/original/017465f1-e5b3-43ff-8d92-facd828f8fc2.jpeg?im_w=720"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h2 class="text-[14px]">Kittia, Finland</h2>
+          </div>
+          <div class="text-[12px] text-gray-500">7,000 kilometers away</div>
+          <div class="text-[14px]">$124 night</div>
+        </div>
+        <div>
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-52086975/original/017465f1-e5b3-43ff-8d92-facd828f8fc2.jpeg?im_w=720"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h2 class="text-[14px]">Kittia, Finland</h2>
+          </div>
+          <div class="text-[12px] text-gray-500">7,000 kilometers away</div>
+          <div class="text-[14px]">$124 night</div>
+        </div>
+
+        <div>
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-52086975/original/017465f1-e5b3-43ff-8d92-facd828f8fc2.jpeg?im_w=720"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h2 class="text-[14px]">Kittia, Finland</h2>
+          </div>
+          <div class="text-[12px] text-gray-500">7,000 kilometers away</div>
+          <div class="text-[14px]">$124 night</div>
+        </div>
+        <div>
+          <div class="overflow-hidden rounded-xl">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-52086975/original/017465f1-e5b3-43ff-8d92-facd828f8fc2.jpeg?im_w=720"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h2 class="text-[14px]">Kittia, Finland</h2>
+          </div>
+          <div class="text-[12px] text-gray-500">7,000 kilometers away</div>
+          <div class="text-[14px]">$124 night</div>
+        </div>
+      </div>
+    </main>
+    <!-- footer section -->
+    <footer></footer>
+  </body>
 </html>
